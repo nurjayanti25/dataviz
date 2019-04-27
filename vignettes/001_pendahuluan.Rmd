@@ -32,7 +32,7 @@ summary(mtcars)
 Saat berkerja dengan dokumen R Markdown, Anda juga dapat menjalankan kode R yang Anda tuliskan dalam *chunk*. Anda dapat menggunakan pemintas **Ctrl + Enter** untuk menjalankan satu baris kode R atau **Ctrl + Shift + Enter** untuk menjalankan semua kode R dalam sebuah *chunk*. Sekarang buatlah *chunk* baru dengan nama 'plot-volcano' dengan menggunakan baris kode R di bawah ini! Kemudian jalankanlah baris kode R dalam *chunk* yang telah Anda buat tersebut dengan menggunakan pemintas **Ctrl + Shift + Enter**!
 
 
-```{r}
+```{r plot-volcano}
 filled.contour(volcano,
                color.palette = terrain.colors, 
                plot.title = title("Topografi Gunung Maunga Whau"), 
