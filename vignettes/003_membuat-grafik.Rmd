@@ -195,7 +195,10 @@ Kita juga dapat membuat *stacked bar plot* untuk memberikan perhatian pada nilai
 
 ```{r}
 ggplot(jabar_road, aes(x = district, y = road_length, fill = condition)) +
-  geom_col()
+  geom_col()+
+  theme(
+    axis.text = element_text(angle = 90)
+  )
 ```
 
 Jika kita lebih tertarik pada kontribusi relatif dari masing-masing kondisi jalan, kita dapat menormalisasi nilai dengan total panjang jalan di tiap kota/kabupaten menggunakan argumen `position = fill`.

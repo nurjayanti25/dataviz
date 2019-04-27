@@ -650,7 +650,10 @@ melakukannya.
 
 ``` r
 ggplot(jabar_road, aes(x = district, y = road_length, fill = condition)) +
-  geom_col()
+  geom_col()+
+  theme(
+    axis.text = element_text(angle = 90)
+  )
 ```
 
 <img src="003_membuat-grafik_files/figure-gfm/unnamed-chunk-14-1.png" style="display: block; margin: auto;" />
